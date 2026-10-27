@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#faf9f6" />
+    <meta name="description" content="Support After the Credits and help keep the film journal going." />
+    <title>Support the work — After the Credits</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="support-page">
+    <header class="site-header support-site-header">
+      <a class="wordmark" href="./index.html#top" aria-label="After the Credits home">after the credits<span>.</span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="nav-link" href="./index.html#journal">Journal</a>
+        <a class="nav-link active" href="./support.html" aria-current="page">Support</a>
+      </nav>
+      <a class="header-cta" href="./index.html#journal">Read the journal <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main class="support-main">
+      <section class="support-layout" aria-labelledby="support-title">
+        <div class="support-copy">
+          <p class="eyebrow">A SMALL WAY TO KEEP IT GOING</p>
+          <h1 id="support-title">Support<br /><em>the work.</em></h1>
+          <p class="support-lede">This journal is made from a love of movies, a little time, and a lot of notes.</p>
+          <p>If something here helped you find a film, remember a scene, or put a feeling into words, you can help this little journal keep growing.</p>
+          <a class="support-back-link" href="./index.html#journal">Back to the films <span aria-hidden="true">↗</span></a>
+        </div>
+
+        <section class="contribution-card" aria-labelledby="contribution-title">
+          <p class="eyebrow">ONE-TIME CONTRIBUTION</p>
+          <h2 id="contribution-title">Choose an amount</h2>
+          <p class="contribution-intro">Every contribution is appreciated.</p>
+          <div class="amount-options" role="group" aria-label="Suggested contribution in Indian rupees">
+            <button class="amount-option selected" type="button" data-amount="100" aria-pressed="true" disabled>₹100</button>
+            <button class="amount-option" type="button" data-amount="250" aria-pressed="false" disabled>₹250</button>
+            <button class="amount-option" type="button" data-amount="500" aria-pressed="false" disabled>₹500</button>
+          </div>
+          <label class="form-field contribution-custom">OR ENTER AN AMOUNT (₹)
+            <input id="custom-amount" type="number" min="1" step="1" inputmode="numeric" placeholder="Other amount" disabled />
+          </label>
+          <a class="contribute-button" id="contribution-link" href="#" aria-disabled="true">Continue to UPI <span aria-hidden="true">↗</span></a>
+          <p class="support-status" id="support-status" role="status">Contributions are being set up. Please check back soon.</p>
+          <div class="upi-details" id="upi-details" hidden>
+            <span class="upi-label">UPI ID</span>
+            <strong id="upi-id-display"></strong>
+            <button class="copy-upi" id="copy-upi" type="button">Copy</button>
+          </div>
+          <p class="payment-note">Payment is completed in your UPI app. This journal does not collect or store bank details.</p>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer"><a class="wordmark" href="./index.html#top">after the credits<span>.</span></a><a class="footer-support" href="./index.html#journal">Return to the journal <span aria-hidden="true">↗</span></a><span class="footer-copy">© <span id="year"></span></span></footer>
+    <script src="support-config.js"></script>
+    <script src="support.js"></script>
+  </body>
+</html>
